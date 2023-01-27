@@ -4,6 +4,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
+height:720px;
 background: #FAFAFA 0% 0% no-repeat padding-box;
 opacity: 1;
 }
@@ -95,10 +96,19 @@ color: #C8242F;
 .btnfor{
     display: inline-flex;
 }
+
+
+
+/* Dashboard CSS */
+.backgrow{
+    background-color: #FAFAFA;
+}
 .headerdashboard{
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
+    background-color: #ffffff;
 }
 .menubar{
     margin-left: 29px;
@@ -132,73 +142,373 @@ padding-left: 20px;
 .arrow{
     margin-right: 43.53px;
 }
+
+
+
+/* Left Menu Dashboard */
+
+
+.content{
+   width: 242px;
+/* display: flex; */
+}
 .lm{
-    width: 20%;
-    padding-left: 45px;
-    display: flex;
+    width: 242px;
+    height: 1279px;
+    
+/* display: flex; */
+    align-content: flex-start;
     flex-direction: column;
+    padding-top: 10px;
     align-content: space-between;
+    background-color: #ffffff;
 }
 .dashboard{
-    display: flex;
+/* display: flex; */
     align-items: center;
     margin-left: 50px;
-    margin-top: 60px;
+    padding-top: 50px;
     margin-bottom: 16px;
 }
-.analysis{
-    display: flex;
-    
+.dashboard1{
+    /* display: flex; */
     align-items: center;
-    margin-left: 50px;
-    z-index: 1;
-    margin-top: 16px;
+    margin-left: 20px;
+    margin-top: 36px;
     margin-bottom: 16px;
     opacity: 1;
+    }
+.analysis{
+/* display: flex; */
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    opacity: 1;
 }
+.analysis1{
+    /* display: flex; */
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 5px;
+        margin-bottom: 16px;
+        opacity: 1;
+    }
 .inbox{
-    display: flex;
+/* display: flex; */
     align-items: center;
     margin-left: 50px;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 .history{
-    display: flex;
+/* display: flex; */
     align-items: center;
     margin-left: 50px;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 .user{
-    display: flex;
+/* display: flex; */
     align-items: center;
     margin-left: 50px;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 .maintenance{
-    display: flex;
+/* display: flex; */
     align-items: center;
     margin-left: 50px;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 .setting{
-    display: flex;
+/* display: flex; */
     align-items: center;
     margin-left: 50px;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 .analyis{
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    margin-left: 50px;
+    color: #C8242F;
+}
+.analyis1{
+    /* display: flex; */
+    align-items: center;
     color: #C8242F;
 }
 .redbg{
-    z-index: 0;
-    background-color: #C8242F;
-    border-radius: 20px 20px 20px 20px ;
+    width: 160px;
+    height: 43px;
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin-left: 35px;
+    
+}
+
+
+
+/* Main content*/
+.main{
+    margin-left: 50px;
+}
+.maintext{
+    margin-top: 40.75px;
+    margin-left: 0px;
+    width: 146px;
+    height: 39px;
+    font: normal normal medium 30px/39px Roboto;
+    color: #000000;
+}   
+
+.newpdct1{
+    width: 219px;
+    height: 116px;
+    margin-left: 48px;
+    background-color: #ffffff;
+    display:flex;   
+    align-items: center;
+    justify-content: center;    
+}
+.newpdct{
+    width: 219px;
+    height: 116px;
+    margin-left: 30px;
+    background-color: #ffffff;
+    display:flex;   
+    align-items: center;
+    justify-content: center;
+}
+.newpdct1{
+    
+}
+.pallate{
+    display: flex
+}
+
+.graphs{
+    display: flex;
+}
+.sales{
+    width: 802px;
+height: 400px;  
+margin-top: 30px;
+margin-left: 48px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+.saletxt{
+    padding-left: 29px;
+    padding-top: 23.52px;
+    display: flex;
+}
+.graphimg{
+    padding-left: 29px;
+    padding-top: 23.52px;
+}
+.weekly{
+    margin-left: auto;
+    margin-right: 20px;
+    color: #ADADAD;
+}
+.monthly{
+    margin-right: 20px;
+    color: #ADADAD;
+}
+.yearly{
+    margin-right: 16px;
+    color: #C8242F;
+}
+
+.salesbycountry{
+    width: 385px;
+height: 398px;
+margin-top: 30px;
+margin-left: 30px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.salescontrytxt{
+    padding-left: 29px;
+    padding-top: 23.52px;
+}
+.piegraph{
+    padding-left: 50px;
+}
+.countriesname{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.usa img{
+    width: 18px;
+    height: 18px;
+}
+.canada img{
+    width: 18px;
+    height: 18px;
+}
+.russia img{
+    width: 18px;
+    height: 18px;
+    color: #F16C20;
+}
+.india img{
+    width: 18px;
+    height: 18px;
+    color: #EBC844;
+}
+.invoice{
+    width: 1217px;
+    height: 558px;
+    margin-top: 30px;
+    margin-left: 48px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.invoicetxt{
+    padding-left: 29px;
+    padding-top: 22.52px; 
+    display: flex;
+}
+.viewall{
+    margin-left: auto;
+    margin-right: 29px;
+    font: normal normal normal 12px/16px Roboto;
+    color: #C8242F;
+}
+.invoicetable{
+    margin-top: 30px;
+    margin-left: 24px;
+    margin-right: 25px;
+}
+.tblhdr{
+    font: normal normal normal 15px/20px Roboto;
+letter-spacing: 1.5px;
+color: #ADADAD;
+}
+.table{
+    font: normal normal normal  Roboto;
+}
+.mark-paid{
+    background-color: rgb(159, 253, 159);
+    color: green;
+}
+.mark-failed{
+    background-color: rgb(255, 159, 159);
+    color: rgb(255, 0, 0);
+}
+.mark-pending{
+    background-color: rgb(179, 179, 179);
+    color: rgb(63, 63, 63);
+}
+
+
+
+
+/* Inner Page Main Content CSS */
+
+.analysisform{
+    width: 1218px;
+height: auto;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.maintextanalis{
+    padding-left: 29px;
+    padding-top: 22px;
+}
+.txtboxfroneclm{
+    padding-top: 15px;
+    padding-left: 29px;
+    padding-right: 30.5px;
+}
+.nametxtbox{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 100%;
+}
+
+
+.nametxtbox1{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 130px;
+    width: 100%;
+}
+.nametxtbox2{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 49%;
+}
+.nametxtbox3{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 32%;
+}
+.nametxtbox31{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 32%;
+}
+.nametxtbox41{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 24%;
+}
+.nametxtbox4{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 24%;
+}
+
+.btn{
+    width: 124px;
+    border-radius: 50px;
+}
+
+
+.nametxtbox51{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    border-radius: 5px;
+    padding-left: 20px;   
+    height: 49px;
+    width: 49%;
+}
+.btn1{
+    text-align: left;
+    width: 49%;
+    border-radius: 5px;
+}
+.minifont{
+    font-size: 15px;
+    padding-left: 30px;
+    display: flex;
+}
+.minifont-danger{
+    color: #ff0000;
+}
+.minifont-secondary{
+    color: #aaaaaa;
 }
