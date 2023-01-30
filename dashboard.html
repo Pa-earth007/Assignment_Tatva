@@ -11,37 +11,98 @@
 
 <body>
     <div class="backgrow">
-        <div class="headerdashboard">
+        <div class="headerdashboard d-flex ">
             <div class="menubar">
                 <img src="images/menu-bar.svg">
             </div>
-            <div class="logo">
+            <div class="logo d-lg-block d-sm-none">
+                <a href="#">
                 <img src="images/header-logo.svg" alt="">
+            </a>
             </div>
+            <div class="smalllogo d-lg-none d-sm-block">
+                <a href="#">
+                <img src="./images/mobile-header-logo.svg" alt="">
+            </a>
+            </div>
+                
             <div class="searchicon">
+                <a href="#">
                 <img src="images/search-icon.svg" alt="" height="16px" width="16px">
+            </a>
             </div>
-            <div class="input">
+            <div class="input d-lg-block d-sm-none">
                 <input type="text" placeholder="Search" class="searchbox">
             </div>
             <div class="alarm">
+                <a href="#">
                 <img src="images/notification-icon.svg" alt="" height="21px" width="21px">
+            </a>
             </div>
             <div class="profile">
+                </a>
                 <img src="images/profile.png" alt="" height="44px" width="44px">
             </div>
-            <div class="name">
+            <div class="name d-lg-block d-sm-none">
+                <a href="#">
                 John Doe
+            </a>
             </div>
             <div class="arrow">
+                <a href="#">
                 <img src="images/downward-arrow.svg" alt="" height="16px" width="16px">
+            </a>
             </div>
         </div>
         <div class="afterheader row">
-            <div class="content col-2">
+            <div class="content col-2 d-lg-block d-sm-none">
 
                 <div class="lm">
-                    <div class="redbg">
+                    <ul class="list-unstyled">
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/dashboard-active.svg" alt="Dashboard Icon">
+                                <span>Dashboard</span>
+                            </li>
+                        </a>
+                        <a href="http://127.0.0.1:5500/innerpage.html?#">
+                            <li class="">
+                                <img src="./images/graph-default.svg" alt="Dashboard Icon">
+                                <span>Analysis</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/inbox-default.svg" alt="Dashboard Icon">
+                                <span>Inbox</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/clock-default.svg" alt="Dashboard Icon">
+                                <span>History</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/user-default.svg" alt="Dashboard Icon">
+                                <span>Users</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/maintenance-default.svg" alt="Dashboard Icon">
+                                <span>Maintenance</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/setting-default.svg" alt="Dashboard Icon">
+                                <span>Setting</span>
+                            </li>
+                        </a>
+                    </ul>
+                    <!-- <div class="redbg">
                         <div class="dashboard1">
                             <img src="images/dashboard-active.svg" alt="" height="35px" width="35px">
                             <span class="analyis1">Dashboard</span>
@@ -71,50 +132,50 @@
                     <div class="setting">
                         <img src="images/setting-default.svg" alt="" height="35px" width="35px">
                         Setting
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-            <div class="main col ">
+            <div class="main col-9 ">
                 <h3 class="maintext">Dashboard</h3>
-                <div class="pallate">
-                    <div class="newpdct1">
-                        <img src="images/star.svg" class="star col-3" alt="">&nbsp;&nbsp;
+                <div class="pallate d-flex justify-content-between gap-4">
+                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                        <img src="images/star.svg"  alt="">
                         <div class="palatecontent">
                             <h3>23,456</h3>
                             <b>New Products</b>
                         </div>
                     </div>
-                    <div class="newpdct">
-                        <img src="images/new-product.svg" class="star col-3" alt="">&nbsp;&nbsp;
+                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                        <img src="images/new-product.svg" alt="">
                         <div class="palatecontent">
                             <h3>2345</h3>
                             <b>Added Products</b>
                         </div>
                     </div>
-                    <div class="newpdct">
-                        <img src="images/total-product.svg" class="star col-3" alt="">&nbsp;&nbsp;
+                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                        <img src="images/total-product.svg" alt="">
                         <div class="palatecontent">
                             <h3>32,456</h3>
                             <b>Total Products</b>
                         </div>
                     </div>
-                    <div class="newpdct">
-                        <img src="images/dollar-filled.svg" class="star col-3" alt="">&nbsp;&nbsp;
+                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                        <img src="images/dollar-filled.svg" alt="">
                         <div class="palatecontent">
                             <h3>5678</h3>
                             <b>Today's Sale</b>
                         </div>
                     </div>
-                    <div class="newpdct">
-                        <img src="images/money-bag.svg" class="star col-3" alt="">&nbsp;&nbsp;
+                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                        <img src="images/money-bag.svg" alt="">
                         <div class="palatecontent">
                             <h3>33,5342</h3>
                             <b>Total Sale</b>
                         </div>
                     </div>
                 </div>
-                <div class="graphs">
+                <div class="graphs d-flex justify-content-around gap-3">
                     <div class="sales">
                         <div class="saletxt">
                             <h4>Sale</h4>

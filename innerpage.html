@@ -11,69 +11,100 @@
 
 <body>
     <div class="backgrow">
-        <div class="headerdashboard">
+        <div class="headerdashboard d-flex ">
             <div class="menubar">
                 <img src="images/menu-bar.svg">
             </div>
-            <div class="logo">
+            <div class="logo d-lg-block d-sm-none">
+                <a href="#">
                 <img src="images/header-logo.svg" alt="">
+            </a>
             </div>
+            <div class="smalllogo d-lg-none d-sm-block">
+                <a href="#">
+                <img src="./images/mobile-header-logo.svg" alt="">
+            </a>
+            </div>
+                
             <div class="searchicon">
+                <a href="#">
                 <img src="images/search-icon.svg" alt="" height="16px" width="16px">
+            </a>
             </div>
-            <div class="input">
+            <div class="input d-lg-block d-sm-none">
                 <input type="text" placeholder="Search" class="searchbox">
             </div>
             <div class="alarm">
+                <a href="#">
                 <img src="images/notification-icon.svg" alt="" height="21px" width="21px">
+            </a>
             </div>
             <div class="profile">
+                </a>
                 <img src="images/profile.png" alt="" height="44px" width="44px">
             </div>
-            <div class="name">
+            <div class="name d-lg-block d-sm-none">
+                <a href="#">
                 John Doe
+            </a>
             </div>
             <div class="arrow">
+                <a href="#">
                 <img src="images/downward-arrow.svg" alt="" height="16px" width="16px">
+            </a>
             </div>
         </div>
         <div class="afterheader row">
-            <div class="content col-2">
+            <div class="content col-2 d-lg-block d-sm-none">
 
                 <div class="lm">
-                    <div class="dashboard">
-                        <img src="images/dashboard-default.svg" alt="" height="35px" width="35px">
-                        Dashboard
-                    </div>
-                    <div class="redbg">
-                        <div class="analysis">
-                            <img src="images/graph-active.svg" alt="" height="35px" width="35px">
-                            <span class="analyis">Analysis</span>
-                        </div>
-                    </div>
-                    <div class="inbox">
-                        <img src="images/inbox-default.svg" alt="" height="35px" width="35px">
-                        Inbox
-                    </div>
-                    <div class="history">
-                        <img src="images/clock-default.svg" alt="" height="35px" width="35px">
-                        History
-                    </div>
-                    <div class="user">
-                        <img src="images/user-default.svg" alt="" height="35px" width="35px">
-                        Users
-                    </div>
-                    <div class="maintenance">
-                        <img src="images/maintenance-default.svg" alt="" height="35px" width="35px">
-                        Maintenance
-                    </div>
-                    <div class="setting">
-                        <img src="images/setting-default.svg" alt="" height="35px" width="35px">
-                        Setting
-                    </div>
+                    <ul class="list-unstyled">
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/dashboard-default.svg" alt="Dashboard Icon">
+                                <span>Dashboard</span>
+                            </li>
+                        </a>
+                        <a href="http://127.0.0.1:5500/innerpage.html?#">
+                            <li class="">
+                                <img src="./images/graph-active.svg" alt="Dashboard Icon">
+                                <span>Analysis</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/inbox-default.svg" alt="Dashboard Icon">
+                                <span>Inbox</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/clock-default.svg" alt="Dashboard Icon">
+                                <span>History</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/user-default.svg" alt="Dashboard Icon">
+                                <span>Users</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/maintenance-default.svg" alt="Dashboard Icon">
+                                <span>Maintenance</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/setting-default.svg" alt="Dashboard Icon">
+                                <span>Setting</span>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
             </div>
-            <div class="main col ">
+            <div class="main col-9 ">
                 <h3 class="maintext">Analysis</h3>
                 <div class="analysisform">
                     <h5 class="maintextanalis">One Column</h5>
@@ -134,9 +165,9 @@
                     <div class="analysisform">
                         <h5 class="maintextanalis">Radio Button</h5>
                         <div class="txtboxfroneclm">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="Green" id="Green">
                             Option 1 &nbsp;&nbsp;
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="Green" id="Green">
                             Option 2
                         </div>
                     </div>
@@ -156,15 +187,15 @@
                         <div class="txtboxfroneclm">
                             <button type="button" class="btn btn-outline-danger btn1" disabled><img
                                     src="images/error-icon.svg" alt="" width="25px" height="25px">&nbsp;This is Error
-                                Message!</button>
+                                Message !</button>
                             &nbsp; &nbsp;
                             <button type="button" class="btn btn-outline-info btn1" disabled><img
                                     src="images/info-icon.svg" alt="" width="25px" height="25px">&nbsp;This is
-                                Informative Message!</button>
+                                Informative Message !</button>
                             <br /><br />
                             <button type="button" class="btn btn-outline-warning btn1" disabled><img
                                     src="images/warning-icon.svg" alt="" width="25px" height="25px">&nbsp;This is
-                                Warning Message!</button>
+                                Warning Message !</button>
                             &nbsp; &nbsp;
                             <button type="button" class="btn btn-outline-success btn1" disabled><img
                                     src="images/success-icon.svg" alt="" width="25px" height="25px">&nbsp;This is
