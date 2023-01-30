@@ -411,9 +411,7 @@ span {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
-    padding-left: 20px;
     height: 49px;
-    width: 100%;
 }
 
 
@@ -421,54 +419,28 @@ span {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
-    padding-left: 20px;
     height: 130px;
-    width: 100%;
 }
 
 .nametxtbox2 {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
-    padding-left: 20px;
     height: 49px;
-    width: 49%;
 }
-
 .nametxtbox3 {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
-    padding-left: 20px;
     height: 49px;
-    width: 32%;
 }
 
-.nametxtbox31 {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
-    padding-left: 20px;
-    height: 49px;
-    width: 32%;
-}
-
-.nametxtbox41 {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
-    padding-left: 20px;
-    height: 49px;
-    width: 24%;
-}
 
 .nametxtbox4 {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
-    padding-left: 20px;
     height: 49px;
-    width: 24%;
 }
 
 .btn {
@@ -482,25 +454,23 @@ span {
     border: 1px solid #ff0000;
     color: #ff0000;
     border-radius: 5px;
-    padding-left: 20px;
     height: 49px;
-    width: 49%;
 }
 
 .btn1 {
-    text-align: left;
-    width: 49%;
+        text-align: left;
+        width: 49%;
     border-radius: 5px;
 }
 
 .minifont {
     font-size: 15px;
-    padding-left: 30px;
     display: flex;
 }
 
 .minifont-danger {
     color: #ff0000;
+    margin-right: 11%;
 }
 
 .minifont-secondary {
