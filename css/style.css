@@ -509,12 +509,12 @@ span {
     border-radius: 50px;
 }
 .btn2:hover{
-    background-color: #FFFFFF;
-    color: #C8242F;
+    background-color: #86161d;
 }
 .btn3:hover{
-    background-color: #C8242F;
-    color: #FFFFFF;
+    background-color: #ebebeb;
+    border: #ebebeb;
+    color: #000000;
 }
 .form-check-input:checked {
     background-color: #C8242F;
