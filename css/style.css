@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
 }
 
 .background {
@@ -106,9 +107,9 @@ body {
 
 
 /* ----------------------------------Dashboard CSS--------------------------- */
-.backgrow {
-    background-color: #FAFAFA;
-}
+/* .backgrow {
+    background-color: #ffffff;
+} */
 
 .headerdashboard {
     padding-top: 1%;
@@ -125,7 +126,8 @@ body {
 .logo {
     margin-left: 25px;
 }
-.smalllogo{
+
+.smalllogo {
     margin-left: 25px;
     width: 30px;
     height: 30px;
@@ -159,9 +161,11 @@ body {
 
 .name {
     margin-right: .5%;
+}
+
+.name a{
     color: #000000;
     text-decoration: underline white;
-
 }
 
 .arrow {
@@ -172,33 +176,41 @@ body {
 
 /* --------------------------------------------------Left Menu Dashboard---------------------------------------- */
 
-
-.content {
-    width: 242px;
-    /* display: flex; */
+.afterheader{
+    display: flex;
 }
 
+
 .lm {
-    height: 1279px;
     font-size: 15px;
-    /* display: flex; */
+    width: 260px;
+    min-height: 100vh;
+    height: 100%;
     align-content: flex-start;
     flex-direction: column;
     padding-top: 10px;
+    padding-bottom: 2%;
     align-content: space-between;
     background-color: #ffffff;
 }
-
+.activemenu{
+    color: #C8242F;
+}
 ul img {
     width: 25px;
     height: 25px;
 }
+
 ul a li img:hover {
     background-color: #ffffff;
 }
+ul a {
+    text-decoration: none;
+}
+
 span {
-    font-size: 20px;
-    text-decoration: underline white;
+    font-size: 16px;
+    font-weight: 400;
     padding: 10px 30px 10px 10px;
     color: #000000;
 }
@@ -207,19 +219,25 @@ span {
     margin-left: 30px;
 }
 
-.list-unstyled a li {
-    margin-top: 20px;
-}
 
 .list-unstyled a li {
+    padding: 10px;
+}
+
+/* .list-unstyled a li {
     position: relative;
-}
+} */
 
-.list-unstyled a span:hover {
+.list-unstyled a li:hover {
     background-color: #FFF3F4;
     border-radius: 8px;
-    text-decoration: underline #FFF3F4;
     color: #C8242F;
+}
+.list-unstyled a li span:hover {
+    color: #C8242F;
+}
+.list-unstyled a li img:hover {
+    background-color: #FFF3F4;
 }
 
 
@@ -227,50 +245,95 @@ span {
 
 /* ------------------------------------------------------Main content-------------------------------------------- */
 .main {
-    margin-left: 50px;
+    margin-left: 2%;
+    width: 80%;
 }
 
 .maintext {
     margin-top: 40.75px;
-    margin-left: 0px;
     font-size: 30px;
     color: #000000;
 }
-
-.newpdct img{
-    width: 33.33px;
+.boxes{
+    padding:15px;
 }
-.newpdct{
-    width:20%;
+.box{
+    width:200px;
+    height: 90px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+}
+.box .boxttext .boxname{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.box .boxttext .numbers{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.box img{
+    width: 34px;
+    height: 34px;
+}
+
+/* .main .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .boxes .box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 19%;
+    padding: 15px 25px 15px 10px;
     background-color: #ffffff;
 }
-.pallate {
-    display: flex
+
+.box .boxtext{
+    display: flex;
+    flex-direction: column;
 }
 
+.box .boxttext .boxname{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.box .boxttext .numbers{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.box img{
+    width: 34px;
+    height: 34px;
+} */
+
+
+
 .graphs {
-    display: flex;
 }
 
 .sales {
-    width: 69%;
-    height: 400px;
-    margin-top: 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 5px;
     opacity: 1;
 }
 
 .saletxt {
-    padding-left: 29px;
-    padding-top: 23.52px;
-    display: flex;
 }
 
-.graphimg {
-    padding-left: 29px;
-    padding-top: 23.52px;
-}
+
 
 .weekly {
     margin-left: auto;
@@ -285,30 +348,24 @@ span {
 
 .yearly {
     margin-right: 16px;
-    text-decoration :underline;
+    text-decoration: underline 3px;
+    text-underline-offset: 13px;
     position: relative;
     color: #C8242F;
 }
 
+
+
 .salesbycountry {
-    width: 29%;
-    height: 398px;
-    margin-top: 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
-.salescontrytxt {
-    padding-left: 29px;
-    padding-top: 23.52px;
+.salescontrytxt h4{
 }
 
 .piegraph {
-    padding-left: 50px;
 }
-
 .countriesname {
-    display: grid;
-    grid-template-columns: auto auto;
 }
 
 .usa img {
@@ -333,8 +390,7 @@ span {
 
 .invoice {
     width: 100%;
-    height: 558px;
-    margin-top: 30px;
+    margin-top: 2%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
@@ -347,8 +403,14 @@ span {
 .viewall {
     margin-left: auto;
     margin-right: 29px;
-    font: normal normal normal 15px/19px Roboto;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.viewalll {
     color: #C8242F;
+    text-decoration: underline white;
 }
 
 .invoicetable {
@@ -386,13 +448,9 @@ span {
 }
 
 
-
-
 /* ----------------------------------------------Inner Page Main Content CSS------------------------------- */
 
 .analysisform {
-    width: 1218px;
-    height: auto;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
@@ -423,44 +481,64 @@ span {
 }
 
 .nametxtbox2 {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
     border-radius: 5px;
     height: 49px;
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 25px;
 }
+
 .nametxtbox3 {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
     border-radius: 5px;
     height: 49px;
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 25px;
 }
 
 
 .nametxtbox4 {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
     border-radius: 5px;
     height: 49px;
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 25px;
 }
 
 .btn {
-    width: 124px;
     border-radius: 50px;
 }
-
-
-.nametxtbox51 {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ff0000;
-    color: #ff0000;
-    border-radius: 5px;
-    height: 49px;
+.btn2:hover{
+    background-color: #FFFFFF;
+    color: #C8242F;
+}
+.btn3:hover{
+    background-color: #C8242F;
+    color: #FFFFFF;
+}
+.form-check-input:checked {
+    background-color: #C8242F;
+    border: 1px solid #C8242F;
+}
+.alert{
+    border: 1px solid;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.alert img{
+    width: 30px;
+    height: 30px;
 }
 
+
 .btn1 {
-        text-align: left;
-        width: 49%;
+    text-align: left;
+    width: 100%;
     border-radius: 5px;
+    height: 49px;
+    padding-left: 15px;
+    margin-bottom: 25px;
 }
 
 .minifont {
@@ -470,10 +548,24 @@ span {
 
 .minifont-danger {
     color: #ff0000;
-    margin-right: 11%;
+    margin-right: 18%;
 }
 
 .minifont-secondary {
     color: #aaaaaa;
 }
 
+.active{
+    font-weight: 500;
+    color: #C8242F;
+    text-decoration: underline 3px #C8242F;
+    text-underline-offset: 7px;
+}
+hr{
+    margin-top: -5px;
+}
+.unactive{
+    font-weight: 500;
+    margin-left: -50px;
+    color: #000000;
+}

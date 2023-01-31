@@ -13,7 +13,9 @@
     <div class="backgrow">
         <div class="headerdashboard d-flex ">
             <div class="menubar">
+                <a href="#">
                 <img src="images/menu-bar.svg">
+            </a>
             </div>
             <div class="logo d-lg-block d-sm-none">
                 <a href="#">
@@ -36,14 +38,15 @@
             </div>
             <div class="alarm">
                 <a href="#">
-                <img src="images/notification-icon.svg" alt="" height="21px" width="21px">
-            </a>
+                    <img src="images/notification-icon.svg" alt="" height="21px" width="21px">
+                </a>
             </div>
             <div class="profile">
-                </a>
-                <img src="images/profile.png" alt="" height="44px" width="44px">
+                <a href="#">
+                    <img src="images/profile.png" alt="" height="44px" width="44px">
+                </a>    
             </div>
-            <div class="name d-lg-block d-sm-none">
+            <div class="name d-lg-block d-sm-none align-content-center">
                 <a href="#">
                 John Doe
             </a>
@@ -54,15 +57,13 @@
             </a>
             </div>
         </div>
-        <div class="afterheader row">
-            <div class="content col-2 d-lg-block d-sm-none">
-
-                <div class="lm">
+        <div class="afterheader">
+                <aside class="lm d-md-block d-none">
                     <ul class="list-unstyled">
-                        <a href="#">
+                        <a href="http://127.0.0.1:5500/dashboard.html#">
                             <li class="">
                                 <img src="./images/dashboard-active.svg" alt="Dashboard Icon">
-                                <span>Dashboard</span>
+                                <span class="activemenu">Dashboard</span>
                             </li>
                         </a>
                         <a href="http://127.0.0.1:5500/innerpage.html?#">
@@ -102,113 +103,84 @@
                             </li>
                         </a>
                     </ul>
-                    <!-- <div class="redbg">
-                        <div class="dashboard1">
-                            <img src="images/dashboard-active.svg" alt="" height="35px" width="35px">
-                            <span class="analyis1">Dashboard</span>
-                        </div>
-                    </div>
-                    <div class="analysis1">
-                        <img src="images/graph-default.svg" alt="" height="35px" width="35px">
-                        Analysis
-                    </div>
-
-                    <div class="inbox">
-                        <img src="images/inbox-default.svg" alt="" height="35px" width="35px">
-                        Inbox
-                    </div>
-                    <div class="history">
-                        <img src="images/clock-default.svg" alt="" height="35px" width="35px">
-                        History
-                    </div>
-                    <div class="user">
-                        <img src="images/user-default.svg" alt="" height="35px" width="35px">
-                        Users
-                    </div>
-                    <div class="maintenance">
-                        <img src="images/maintenance-default.svg" alt="" height="35px" width="35px">
-                        Maintenance
-                    </div>
-                    <div class="setting">
-                        <img src="images/setting-default.svg" alt="" height="35px" width="35px">
-                        Setting
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="main col-9 ">
+                </aside>
+            <section class="main">
                 <h3 class="maintext">Dashboard</h3>
-                <div class="pallate d-flex justify-content-between gap-4">
-                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                <div class="boxes d-flex flex-wrap">
+                    <div class="box d-flex flex-row align-items-center justify-content-around">
                         <img src="images/star.svg"  alt="">
-                        <div class="palatecontent">
-                            <h3>23,456</h3>
-                            <b>New Products</b>
+                        <div class="boxttext d-flex flex-column align-content-around">
+                            <div class="numbers">23,456</div>
+                            <div class="boxname">New Products</div>
                         </div>
                     </div>
-                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                    <div class="box d-flex flex-row align-items-center justify-content-around">
                         <img src="images/new-product.svg" alt="">
-                        <div class="palatecontent">
-                            <h3>2345</h3>
-                            <b>Added Products</b>
+                        <div class="boxttext d-flex flex-column">
+                            <div class="numbers">2345</div>
+                            <div class="boxname">Added Products</div>
                         </div>
                     </div>
-                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                    <div class="box d-flex flex-row align-items-center justify-content-around">
                         <img src="images/total-product.svg" alt="">
-                        <div class="palatecontent">
-                            <h3>32,456</h3>
-                            <b>Total Products</b>
+                        <div class="boxttext d-flex flex-column">
+                            <div class="numbers">32,456</div>
+                            <div class="boxname">Total Products</div>
                         </div>
                     </div>
-                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                    <div class="box d-flex flex-row align-items-center justify-content-around">
                         <img src="images/dollar-filled.svg" alt="">
-                        <div class="palatecontent">
-                            <h3>5678</h3>
-                            <b>Today's Sale</b>
+                        <div class="boxttext d-flex flex-column">
+                            <div class="numbers">5678</div>
+                            <div class="boxname">Today's Sale</div>
                         </div>
                     </div>
-                    <div class="newpdct d-flex align-content-center justify-content-around p-4">
+                    <div class="box d-flex flex-row align-items-center justify-content-around">
                         <img src="images/money-bag.svg" alt="">
-                        <div class="palatecontent">
-                            <h3>33,5342</h3>
-                            <b>Total Sale</b>
+                        <div class="boxttext d-flex flex-column">
+                            <div class="numbers">33,5342</div>
+                            <div class="boxname">Total Sale</div>
                         </div>
                     </div>
                 </div>
-                <div class="graphs d-flex justify-content-around gap-3">
-                    <div class="sales">
-                        <div class="saletxt">
-                            <h4>Sale</h4>
-                            <div class="weekly">Weekly</div>
-                            <div class="monthly">Monthly</div>
-                            <div class="yearly"><u>Yearly</u></div>
-                            <img src="images/" alt="">
-                        </div>
-                        <img class="graphimg" src="images/data-graph.png" alt="">
-                    </div>
-                    <div class="salesbycountry ">
-                        <div class="salescontrytxt">
-                            <h4>Sales By Country</h4>
-                            <div class="piegraph">
-                                <img src="images/pie-chart.svg" alt="">
+                <div class="graphs row">
+                    <div class="col-12 col-md-8">
+                        <div class="sales p-3 h-100">
+                            <div class="saletxt d-flex">
+                                <h4>Sale</h4>
+                                <div class="weekly">Weekly</div>
+                                <div class="monthly">Monthly</div>
+                                <div class="yearly"><u>Yearly</u></div>
+                                <img src="images/" alt="">
                             </div>
-                            <div class="countriesname">
-
-                                <div class="usa">
-                                    <img src="images/radio-checked-icon.svg" alt="">
-                                    United States of America
+                            <img class="graphimg mt-3 w-100" src="images/data-graph.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="salesbycountry p-3 h-100">
+                            <div class="salescontrytxt">
+                                <h4>Sales By Country</h4>
+                                <div class="piegraph">
+                                    <img class="w-100" src="images/pie-chart.svg" alt="">
                                 </div>
-                                <div class="canada">
-                                    <img src="images/radio-checked-icon-canada.svg" alt="">
-                                    Canada
-                                </div>
-                                <div class="russia">
-                                    <img src="images/radio-checked-icon-orange.svg" alt="">
-                                    Russia
-                                </div>
-                                <div class="india">
-                                    <img src="images/radio-checked-icon-yellow.svg" alt="">
-                                    India
+                                <div class="countriesname p-2">
+                
+                                    <div class="usa">
+                                        <img src="images/radio-checked-icon.svg" alt="">
+                                        United States of America
+                                    </div>
+                                    <div class="canada">
+                                        <img src="images/radio-checked-icon-canada.svg" alt="">
+                                        Canada
+                                    </div>
+                                    <div class="russia">
+                                        <img src="images/radio-checked-icon-orange.svg" alt="">
+                                        Russia
+                                    </div>
+                                    <div class="india">
+                                        <img src="images/radio-checked-icon-yellow.svg" alt="">
+                                        India
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -217,9 +189,9 @@
                 <div class="invoice">
                     <div class="invoicetxt">
                         <h4>Invoices</h4>
-                        <div class="viewall">View All</div>
+                        <div class="viewall"><a href="#" class="viewalll">View All</a></div>
                     </div>
-                    <div class="invoicetable">
+                    <div class="invoicetable table-responsive">
                         <table class="table">
                             <tr class="tblhdr">
                                 <th>INVOICE</th>
@@ -304,7 +276,7 @@
                         </table>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>

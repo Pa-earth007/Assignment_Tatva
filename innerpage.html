@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Innerpage</title>
+    <title>innerpage</title>
 </head>
 
 <body>
     <div class="backgrow">
         <div class="headerdashboard d-flex ">
             <div class="menubar">
+                <a href="#">
                 <img src="images/menu-bar.svg">
+            </a>
             </div>
             <div class="logo d-lg-block d-sm-none">
                 <a href="#">
@@ -36,14 +38,15 @@
             </div>
             <div class="alarm">
                 <a href="#">
-                <img src="images/notification-icon.svg" alt="" height="21px" width="21px">
-            </a>
+                    <img src="images/notification-icon.svg" alt="" height="21px" width="21px">
+                </a>
             </div>
             <div class="profile">
-                </a>
-                <img src="images/profile.png" alt="" height="44px" width="44px">
+                <a href="#">
+                    <img src="images/profile.png" alt="" height="44px" width="44px">
+                </a>    
             </div>
-            <div class="name d-lg-block d-sm-none">
+            <div class="name d-lg-block d-sm-none align-content-center">
                 <a href="#">
                 John Doe
             </a>
@@ -54,12 +57,10 @@
             </a>
             </div>
         </div>
-        <div class="afterheader row">
-            <div class="content col-2 d-lg-block d-sm-none">
-
-                <div class="lm">
+        <div class="afterheader">
+                <aside class="lm d-md-block d-none">
                     <ul class="list-unstyled">
-                        <a href="#">
+                        <a href="http://127.0.0.1:5500/dashboard.html#">
                             <li class="">
                                 <img src="./images/dashboard-default.svg" alt="Dashboard Icon">
                                 <span>Dashboard</span>
@@ -68,7 +69,7 @@
                         <a href="http://127.0.0.1:5500/innerpage.html?#">
                             <li class="">
                                 <img src="./images/graph-active.svg" alt="Dashboard Icon">
-                                <span>Analysis</span>
+                                <span class="activemenu">Analysis</span>
                             </li>
                         </a>
                         <a href="#">
@@ -102,9 +103,9 @@
                             </li>
                         </a>
                     </ul>
-                </div>
-            </div>
-            <div class="main col-9 ">
+                </aside>
+
+            <section class="main">
                 <h3 class="maintext">Analysis</h3>
                 <div class="analysisform">
                     <h5 class="maintextanalis">One Column</h5>
@@ -117,33 +118,34 @@
                     </div>
                     <div class="analysisform">
                         <h5 class="maintextanalis">Two Column</h5>
-                        <div class="txtboxfroneclm row gap-3">
-                            <input type="text " placeholder="Name" class="nametxtbox2 col-5">
-                            <input type="text " placeholder="Name" class="nametxtbox2 col-5" value="johndoe">
-                            <input type="password " placeholder="Name" class="nametxtbox2 col-lg-5">
-                            <select class="nametxtbox2 col-lg-5" name="Drop Down">
+                        <div class="txtboxfroneclm row">
+                            <div class="col-12 col-sm-6"><input type="text" placeholder="Name" class="nametxtbox2  "></div>
+                            <div class="col-12 col-sm-6"><input type="text" placeholder="Name" class="nametxtbox2 " value="johndoe"></div>
+                            <div class="col-12 col-sm-6"><input type="password" placeholder="Name" class="nametxtbox2 "></div>
+                            <div class="col-12 col-sm-6"><select class="nametxtbox2" name="Drop Down">
                                 <option value="">Drop Down</option>
                             </select>
+                        </div>
+                                
                         </div>
                     </div>
                     <div class="analysisform">
                         <h5 class="maintextanalis">Three Column</h5>
-                        <div class="txtboxfroneclm row gap-5">
-                            <input type="text " class="nametxtbox3 col-lg-3" autofocus>
-                            <input type="password " class="nametxtbox3 col-lg-3" value="1231654">
-                            <input type="text " placeholder="Name" class="nametxtbox3 col-lg-3" value="johndoe"
-                                disabled>
+                        <div class="txtboxfroneclm row">
+                            <div class="col-12 col-sm-6 col-md-4"><input type="text " class="nametxtbox3" autofocus></div>
+                            <div class="col-12 col-sm-6 col-md-4"><input type="password " class="nametxtbox3" value="1231654"></div>
+                            <div class="col-12 col-sm-6 col-md-4"><input type="text " placeholder="Name" class="nametxtbox3" value="johndoe" disabled></div>
                         </div>
                     </div>
                     <div class="analysisform">
                         <h5 class="maintextanalis">Four Column</h5>
-                        <div class="txtboxfroneclm row gap-5">
-                            <input type="text" value="UI Designer" class="nametxtbox4 col-2">
-                            <input type="text " placeholder="Name" class="nametxtbox4 col-2" disabled>
-                            <input type="text " placeholder="Name" class="nametxtbox4 col-2" value="johndoe">
-                            <select class="nametxtbox4 col-2" name="Drop Down" disabled>
+                        <div class="txtboxfroneclm row">
+                            <div class="col-12 col-sm-6 col-md-3"><input type="text" value="UI Designer" class="nametxtbox4"></div>
+                            <div class="col-12 col-sm-6 col-md-3"><input type="text " placeholder="Name" class="nametxtbox4" disabled></div>
+                            <div class="col-12 col-sm-6 col-md-3"><input type="text " placeholder="Name" class="nametxtbox4" value="johndoe"></div>
+                            <div class="col-12 col-sm-6 col-md-3"><select class="nametxtbox4" name="Drop Down" disabled>
                                 <option value="">Drop Down</option>
-                            </select>
+                            </select></div>
                             <div class="minifont">
                                 <p class="minifont-danger">Enter Valid data</p>
                                 <p class="minifont-secondary">Enter your full Name as per ID</p>
@@ -180,41 +182,51 @@
                         </div>
                     
                         <h5 class="maintextanalis">Snakbar</h5>
-                        <div class="txtboxfroneclm">
-                            <button type="button" class="btn btn-outline-danger btn1 col-5" disabled><img
-                                    src="images/error-icon.svg" alt="" width="25px" height="25px">&nbsp;This is Error
-                                Message !</button>
-                            &nbsp; &nbsp;
-                            <button type="button" class="btn btn-outline-info btn1 col-5" disabled><img
-                                    src="images/info-icon.svg" alt="" width="25px" height="25px">&nbsp;This is
-                                Informative Message !</button>
-                            <br /><br />
-                            <button type="button" class="btn btn-outline-warning btn1 col-5" disabled><img
-                                    src="images/warning-icon.svg" alt="" width="25px" height="25px">&nbsp;This is
-                                Warning Message !</button>
-                            &nbsp; &nbsp;
-                            <button type="button" class="btn btn-outline-success btn1 col-5" disabled><img
-                                    src="images/success-icon.svg" alt="" width="25px" height="25px">&nbsp;This is
-                                Success Message!</button>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="w-100 alert border-danger">
+                                    <img src="./images/error-icon.svg" alt=""> 
+                                    <span class="text-danger">This is Error Message</span> 
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="w-100 alert border-info">
+                                    <img src="./images/info-icon.svg" alt=""> 
+                                    <span class="text-info">This is Information Message</span> 
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="w-100 alert border-warning">
+                                    <img src="./images/warning-icon.svg" alt=""> 
+                                    <span class="text-warning">This is Warning Message</span> 
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="w-100 alert border-success">
+                                    <img src="./images/success-icon.svg" alt=""> 
+                                    <span class="text-success">This is Success Message</span> 
+                                </div>
+                            </div>
                         </div>
                         <h5 class="maintextanalis">Call to action</h5>
                         <div class="txtboxfroneclm">
-                            <button type="button" class="btn btn-danger"><b>Primary</b></button>&nbsp;&nbsp;
-                            <button type="button" class="btn btn-outline-danger"><b>Secondary</b></button>
+                            <button type="button" class="btn btn2 btn-danger"><b>Primary</b></button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn3 btn-outline-danger"><b>Secondary</b></button>
                         </div>
                         <h5 class="maintextanalis">Tabs</h5>
                         <div class="txtboxfroneclm">
-                            <ul class="nav nav-tabs">
+                            <ul class="nav">
                                 <li class="nav-item">
-                                    <b class="nav-link active" style="color: rgb(255, 0, 0);">Tab1</b>
+                                    <a class="nav-link active"> <span class="active">Tab1</span> </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><b style="color: black;">Tab2</b></a>
+                                    <a class="nav-link" href="#"><span class="unactive">Tab2</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><b style="color: black;">Tab3</b></a>
+                                    <a class="nav-link" href="#"><span class="unactive">Tab3</span></a>
                                 </li>
                             </ul>
+                            <hr/>
                         </div>
                         <div class="txtboxfroneclm">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -226,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
