@@ -433,18 +433,21 @@ span {
     background-color: #EBFFEF;
     color: #3CDD5F;
     border-radius: 5px;
+    padding-inline: 10px;
 }
 
 .mark-failed {
     background-color: #FFF5F5;
     color: #FF4545;
     border-radius: 5px;
+    padding-inline: 10px;
 }
 
 .mark-pending {
     background-color: #F8F8F8;
     color: #BABABA;
     border-radius: 5px;
+    padding-inline: 10px;
 }
 
 
