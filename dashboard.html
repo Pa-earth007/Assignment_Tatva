@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Dashboard</title>
 </head>
 
 <body>
     <div class="backgrow">
-        <div class="headerdashboard d-flex ">
-            <div class="menubar">
-                <a href="#">
+        <div class="headerdashboard d-flex align-items-center">
+            <div class="menubar d-lg-none d-block">
+                <a id="menubaraction1" href="#">
+                <img src="images/menu-bar.svg">
+            </a>
+            </div>
+            <div class="menubar d-lg-block d-none">
+                <a id="menubaraction" href="#">
                 <img src="images/menu-bar.svg">
             </a>
             </div>
@@ -27,7 +34,7 @@
                 <img src="./images/mobile-header-logo.svg" alt="">
             </a>
             </div>
-                
+            
             <div class="searchicon">
                 <a href="#">
                 <img src="images/search-icon.svg" alt="" height="16px" width="16px">
@@ -57,8 +64,56 @@
             </a>
             </div>
         </div>
-        <div class="afterheader">
-                <aside class="lm d-md-block d-none">
+        <div class="afterheader w-100">
+                <aside class="lm d-lg-block d-none">
+                    <ul class="list-unstyled">
+                        <a href="http://127.0.0.1:5500/dashboard.html#">
+                            <li class="">
+                                <img src="./images/dashboard-active.svg" alt="Dashboard Icon">
+                                <span class="activemenu hide">Dashboard</span>
+                            </li>
+                        </a>
+                        <a href="http://127.0.0.1:5500/innerpage.html?#">
+                            <li class="">
+                                <img src="./images/graph-default.svg" alt="Dashboard Icon">
+                                <span class="hide">Analysis</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/inbox-default.svg" alt="Dashboard Icon">
+                                <span class="hide">Inbox</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/clock-default.svg" alt="Dashboard Icon">
+                                <span class="hide">History</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/user-default.svg" alt="Dashboard Icon">
+                                <span class="hide">Users</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/maintenance-default.svg" alt="Dashboard Icon">
+                                <span class="hide">Maintenance</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/setting-default.svg" alt="Dashboard Icon">
+                                <span class="hide">Setting</span>
+                            </li>
+                        </a>
+                    </ul>
+                </aside>
+                
+            <section class="main">
+                <aside class="lm1 d-block d-lg-none">
                     <ul class="list-unstyled">
                         <a href="http://127.0.0.1:5500/dashboard.html#">
                             <li class="">
@@ -104,9 +159,8 @@
                         </a>
                     </ul>
                 </aside>
-            <section class="main">
                 <h3 class="maintext">Dashboard</h3>
-                <div class="boxes d-flex flex-wrap">
+                <div class="boxes  d-flex flex-wrap justify-content-between">
                     <div class="box d-flex flex-row align-items-center justify-content-around">
                         <img src="images/star.svg"  alt="">
                         <div class="boxttext d-flex flex-column align-content-around">
@@ -143,20 +197,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="graphs row">
-                    <div class="col-12 col-md-8">
+                <div class="graphs row d-flex flex-wrap">
+                    <div class="col-lg-8 col-12">
                         <div class="sales p-3 h-100">
                             <div class="saletxt d-flex">
                                 <h4>Sale</h4>
-                                <div class="weekly">Weekly</div>
-                                <div class="monthly">Monthly</div>
-                                <div class="yearly"><u>Yearly</u></div>
+                                <div class="ms-auto"> 
+                                    <ul class="nav">
+                                    <li class="nav-item">
+                                        <a role="button" class="nav-link "> <span class="report" id="weekly">Weekly</span> </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><span class="report" id="monthly" >Monthly</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><span class="report active-report" id="yearly">Yearly</span></a>
+                                    </li>
+                                </ul></div>
                                 <img src="images/" alt="">
                             </div>
                             <img class="graphimg mt-3 w-100" src="images/data-graph.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-lg-4 col-12">
                         <div class="salesbycountry p-3 h-100">
                             <div class="salescontrytxt">
                                 <h4>Sales By Country</h4>

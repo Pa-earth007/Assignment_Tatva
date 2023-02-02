@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>innerpage</title>
 </head>
 
 <body>
     <div class="backgrow">
-        <div class="headerdashboard d-flex ">
+        <div class="headerdashboard d-flex align-items-center">
             <div class="menubar">
-                <a href="#">
+                <a href="#" id="menubaraction">
                 <img src="images/menu-bar.svg">
             </a>
             </div>
@@ -63,67 +65,74 @@
                         <a href="http://127.0.0.1:5500/dashboard.html#">
                             <li class="">
                                 <img src="./images/dashboard-default.svg" alt="Dashboard Icon">
-                                <span>Dashboard</span>
+                                <span class="hide">Dashboard</span>
                             </li>
                         </a>
                         <a href="http://127.0.0.1:5500/innerpage.html?#">
                             <li class="">
                                 <img src="./images/graph-active.svg" alt="Dashboard Icon">
-                                <span class="activemenu">Analysis</span>
+                                <span class="activemenu hide">Analysis</span>
                             </li>
                         </a>
                         <a href="#">
                             <li class="">
                                 <img src="./images/inbox-default.svg" alt="Dashboard Icon">
-                                <span>Inbox</span>
+                                <span class="hide">Inbox</span>
                             </li>
                         </a>
                         <a href="#">
                             <li class="">
                                 <img src="./images/clock-default.svg" alt="Dashboard Icon">
-                                <span>History</span>
+                                <span class="hide">History</span>
                             </li>
                         </a>
                         <a href="#">
                             <li class="">
                                 <img src="./images/user-default.svg" alt="Dashboard Icon">
-                                <span>Users</span>
+                                <span class="hide">Users</span>
                             </li>
                         </a>
                         <a href="#">
                             <li class="">
                                 <img src="./images/maintenance-default.svg" alt="Dashboard Icon">
-                                <span>Maintenance</span>
+                                <span class="hide">Maintenance</span>
                             </li>
                         </a>
                         <a href="#">
                             <li class="">
                                 <img src="./images/setting-default.svg" alt="Dashboard Icon">
-                                <span>Setting</span>
+                                <span class="hide">Setting</span>
                             </li>
                         </a>
                     </ul>
                 </aside>
 
             <section class="main">
-                <h3 class="maintext">Analysis</h3>
+                
                 <div class="analysisform">
+                    <h4 class="maintext">Analysis</h4>
                     <h5 class="maintextanalis">One Column</h5>
                     <div class="txtboxfroneclm gap-3">
                         <input type="text" placeholder="Name" class="nametxtbox col-12"><br /><br />
                         <select class="nametxtbox col-12" name="Drop Down">
-                            <option value="">Drop Down</option>
+                            <option value="">Drop Down1</option>
+                            <option value="">Drop Down2</option>
+                            <option value="">Drop Down3</option>
+                            <option value="">Drop Down4</option>
                         </select><br /><br />
                         <textarea placeholder="Multiple Line" class="nametxtbox1 col-12"></textarea>
                     </div>
                     <div class="analysisform">
                         <h5 class="maintextanalis">Two Column</h5>
                         <div class="txtboxfroneclm row">
-                            <div class="col-12 col-sm-6"><input type="text" placeholder="Name" class="nametxtbox2  "></div>
-                            <div class="col-12 col-sm-6"><input type="text" placeholder="Name" class="nametxtbox2 " value="johndoe"></div>
-                            <div class="col-12 col-sm-6"><input type="password" placeholder="Name" class="nametxtbox2 "></div>
-                            <div class="col-12 col-sm-6"><select class="nametxtbox2" name="Drop Down">
+                            <div class="col-12 col-lg-6"><input type="text" placeholder="Name" class="nametxtbox2  "></div>
+                            <div class="col-12 col-lg-6"><input type="text" placeholder="Name" class="nametxtbox2 " value="johndoe"></div>
+                            <div class="col-12 col-lg-6"><input type="password" placeholder="Name" class="nametxtbox2 "></div>
+                            <div class="col-12 col-lg-6"><select class="nametxtbox2" name="Drop Down">
                                 <option value="">Drop Down</option>
+                                <option value="">Drop Down2</option>
+                            <option value="">Drop Down3</option>
+                            <option value="">Drop Down4</option>
                             </select>
                         </div>
                                 
@@ -132,19 +141,22 @@
                     <div class="analysisform">
                         <h5 class="maintextanalis">Three Column</h5>
                         <div class="txtboxfroneclm row">
-                            <div class="col-12 col-sm-6 col-md-4"><input type="text " class="nametxtbox3" autofocus></div>
-                            <div class="col-12 col-sm-6 col-md-4"><input type="password " class="nametxtbox3" value="1231654"></div>
-                            <div class="col-12 col-sm-6 col-md-4"><input type="text " placeholder="Name" class="nametxtbox3" value="johndoe" disabled></div>
+                            <div class="col-12  col-lg-4"><input type="text " class="nametxtbox3" autofocus></div>
+                            <div class="col-12  col-lg-4"><input type="password " class="nametxtbox3" value="1231654"></div>
+                            <div class="col-12  col-lg-4"><input type="text " placeholder="Name" class="nametxtbox3" value="johndoe" disabled></div>
                         </div>
                     </div>
                     <div class="analysisform">
                         <h5 class="maintextanalis">Four Column</h5>
                         <div class="txtboxfroneclm row">
-                            <div class="col-12 col-sm-6 col-md-3"><input type="text" value="UI Designer" class="nametxtbox4"></div>
-                            <div class="col-12 col-sm-6 col-md-3"><input type="text " placeholder="Name" class="nametxtbox4" disabled></div>
-                            <div class="col-12 col-sm-6 col-md-3"><input type="text " placeholder="Name" class="nametxtbox4" value="johndoe"></div>
-                            <div class="col-12 col-sm-6 col-md-3"><select class="nametxtbox4" name="Drop Down" disabled>
+                            <div class="col-12  col-lg-3"><input id="validdata" type="text" class="nametxtbox4"></div>
+                            <div class="col-12  col-lg-3"><input type="text " placeholder="Name" class="nametxtbox4" disabled></div>
+                            <div class="col-12  col-lg-3"><input type="text " placeholder="Name" class="nametxtbox4" value="johndoe"></div>
+                            <div class="col-12  col-lg-3"><select class="nametxtbox4" name="Drop Down" disabled>
                                 <option value="">Drop Down</option>
+                                <option value="">Drop Down2</option>
+                            <option value="">Drop Down3</option>
+                            <option value="">Drop Down4</option>
                             </select></div>
                             <div class="minifont">
                                 <p class="minifont-danger">Enter Valid data</p>
@@ -182,26 +194,26 @@
                         </div>
                     
                         <h5 class="maintextanalis">Snakbar</h5>
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
+                        <div class="row m-3">
+                            <div class="col-12 col-lg-6">
                                 <div class="w-100 alert border-danger">
                                     <img src="./images/error-icon.svg" alt=""> 
                                     <span class="text-danger">This is Error Message</span> 
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="w-100 alert border-info">
                                     <img src="./images/info-icon.svg" alt=""> 
                                     <span class="text-info">This is Information Message</span> 
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="w-100 alert border-warning">
                                     <img src="./images/warning-icon.svg" alt=""> 
                                     <span class="text-warning">This is Warning Message</span> 
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="w-100 alert border-success">
                                     <img src="./images/success-icon.svg" alt=""> 
                                     <span class="text-success">This is Success Message</span> 
@@ -214,20 +226,20 @@
                             <button type="button" class="btn btn3 btn-outline-danger px-4"><b>Secondary</b></button>
                         </div>
                         <h5 class="maintextanalis">Tabs</h5>
-                        <div class="txtboxfroneclm">
+                        <div class="tab">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active"> <span class="active">Tab1</span> </a>
+                                    <a role="button" class="nav-link "><span class="report active-report" id="tab1">Tab1</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><span class="unactive">Tab2</span></a>
+                                    <a role="button" class="nav-link" href="#"><span class="report" id="tab2">Tab2</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><span class="unactive">Tab3</span></a>
+                                    <a role="button" class="nav-link" href="#"><span class="report" id="tab3">Tab3</span></a>
                                 </li>
                             </ul>
-                            <hr/>
                         </div>
+                        <hr/>
                         <div class="txtboxfroneclm">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown

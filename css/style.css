@@ -12,7 +12,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 3%;
     background: #FAFAFA 0% 0% no-repeat;
     min-height: 100vh;
 
@@ -110,10 +109,12 @@ body {
 /* .backgrow {
     background-color: #ffffff;
 } */
-
+.backgrow{
+    width: 100%;
+}
 .headerdashboard {
-    padding-top: 1%;
-    padding-bottom: 1%px;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
     display: flex;
     display: inline;
     background-color: #ffffff;
@@ -178,19 +179,31 @@ body {
 
 .afterheader{
     display: flex;
+    width: 100%;
 }
 
 
 .lm {
     font-size: 15px;
-    width: 260px;
+    width: 250px;
     min-height: 100vh;
     height: 100%;
     align-content: flex-start;
     flex-direction: column;
     padding-top: 10px;
-    padding-bottom: 2%;
-    align-content: space-between;
+    padding-inline: 20px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+.lm1 {
+    font-size: 15px;
+    width: 100%;
+    align-content: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-inline: 20px;
+    padding-bottom: 10px;
+    margin-top: -12px;
     background-color: #ffffff;
 }
 .activemenu{
@@ -201,9 +214,6 @@ ul img {
     height: 25px;
 }
 
-ul a li img:hover {
-    background-color: #ffffff;
-}
 ul a {
     text-decoration: none;
 }
@@ -211,17 +221,15 @@ ul a {
 span {
     font-size: 16px;
     font-weight: 400;
-    padding: 10px 30px 10px 10px;
+    padding: 10px;
     color: #000000;
 }
 
-.list-unstyled {
-    margin-left: 30px;
-}
+
 
 
 .list-unstyled a li {
-    padding: 10px;
+    padding: 2%;
 }
 
 /* .list-unstyled a li {
@@ -245,22 +253,22 @@ span {
 
 /* ------------------------------------------------------Main content-------------------------------------------- */
 .main {
-    margin-left: 2%;
-    width: 80%;
+    width: 100%;
+    padding: 2%; 
 }
 
 .maintext {
-    margin-top: 40.75px;
+    padding: 20px;
     font-size: 30px;
     color: #000000;
 }
-.boxes{
-    padding:15px;
-}
+
 .box{
     width:200px;
     height: 90px;
-    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 15px;
     background-color: #FFFFFF;
 }
@@ -322,16 +330,13 @@ span {
 
 
 
-.graphs {
-}
 
 .sales {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
-.saletxt {
-}
+
 
 
 
@@ -360,13 +365,6 @@ span {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
-.salescontrytxt h4{
-}
-
-.piegraph {
-}
-.countriesname {
-}
 
 .usa img {
     width: 25px;
@@ -470,7 +468,7 @@ span {
 
 .nametxtbox {
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
+    border: 1px solid #575757;
     border-radius: 5px;
     height: 49px;
 }
@@ -478,7 +476,7 @@ span {
 
 .nametxtbox1 {
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
+    border: 1px solid #575757;
     border-radius: 5px;
     height: 130px;
 }
@@ -489,6 +487,7 @@ span {
     width: 100%;
     padding-left: 15px;
     margin-bottom: 25px;
+    border: 1px solid #575757;
 }
 
 .nametxtbox3 {
@@ -497,6 +496,7 @@ span {
     width: 100%;
     padding-left: 15px;
     margin-bottom: 25px;
+    border: 1px solid #575757;
 }
 
 
@@ -506,6 +506,7 @@ span {
     width: 100%;
     padding-left: 15px;
     margin-bottom: 25px;
+    border: 1px solid #575757;
 }
 
 .btn {
@@ -558,17 +559,34 @@ span {
     color: #aaaaaa;
 }
 
-.active{
-    font-weight: 500;
+.tab{
+    margin-left: 3%;
+}
+hr{
+    width: 100%;
+    margin-top: -5px;
+}
+.active-report{
     color: #C8242F;
     text-decoration: underline 3px #C8242F;
     text-underline-offset: 7px;
+    margin-left: -40px;
 }
-hr{
-    margin-top: -5px;
-}
-.unactive{
+
+.report{
     font-weight: 500;
-    margin-left: -50px;
-    color: #000000;
+    margin-left: -40px;
+}
+
+
+
+/* .increasewidth{
+    width:
+} */
+.decreasewidth{
+    width: 80px;
+    
+}
+.disappear{
+    display: none!important;
 }
