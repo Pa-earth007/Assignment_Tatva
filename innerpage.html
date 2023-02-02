@@ -109,62 +109,83 @@
 
             <section class="main">
                 
-                <div class="analysisform">
-                    <h4 class="maintext">Analysis</h4>
+                <div class="analysisform row">
+                    <h1 class="maintext">Analysis</h1>
                     <h5 class="maintextanalis">One Column</h5>
-                    <div class="txtboxfroneclm gap-3">
-                        <input type="text" placeholder="Name" class="nametxtbox col-12"><br /><br />
-                        <select class="nametxtbox col-12" name="Drop Down">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control col-12" required>
+                        <label class="form-control-placeholder" for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-select col-12" name="Drop Down">
                             <option value="">Drop Down1</option>
                             <option value="">Drop Down2</option>
                             <option value="">Drop Down3</option>
                             <option value="">Drop Down4</option>
-                        </select><br /><br />
-                        <textarea placeholder="Multiple Line" class="nametxtbox1 col-12"></textarea>
+                        </select>
                     </div>
-                    <div class="analysisform">
-                        <h5 class="maintextanalis">Two Column</h5>
-                        <div class="txtboxfroneclm row">
-                            <div class="col-12 col-lg-6"><input type="text" placeholder="Name" class="nametxtbox2  "></div>
-                            <div class="col-12 col-lg-6"><input type="text" placeholder="Name" class="nametxtbox2 " value="johndoe"></div>
-                            <div class="col-12 col-lg-6"><input type="password" placeholder="Name" class="nametxtbox2 "></div>
-                            <div class="col-12 col-lg-6"><select class="nametxtbox2" name="Drop Down">
-                                <option value="">Drop Down</option>
-                                <option value="">Drop Down2</option>
+                    <div class="form-group">
+                        <textarea class="form-control multiline" placeholder="Multiline Text" rows="8"></textarea>
+                    </div>
+                    <h5 class="maintextanalis">Two Column</h5>
+                    <div class="form-group col-12 col-lg-6">
+                        <input type="text" id="name" class="form-control " required>
+                        <label class="form-control-placeholder" for="name">Name</label>
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                        <input type="text" id="name" class="form-control " value="johndoe" required>
+                        <label class="form-control-placeholder" for="name">UserName</label>
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                        <input type="password" id="name" class="form-control " required>
+                        <label class="form-control-placeholder" for="name">Password</label>
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                        <select class="form-select " name="Drop Down">
+                            <option value="">Drop Down1</option>
+                            <option value="">Drop Down2</option>
                             <option value="">Drop Down3</option>
                             <option value="">Drop Down4</option>
-                            </select>
-                        </div>
-                                
-                        </div>
+                        </select>
                     </div>
-                    <div class="analysisform">
-                        <h5 class="maintextanalis">Three Column</h5>
-                        <div class="txtboxfroneclm row">
-                            <div class="col-12  col-lg-4"><input type="text " class="nametxtbox3" autofocus></div>
-                            <div class="col-12  col-lg-4"><input type="password " class="nametxtbox3" value="1231654"></div>
-                            <div class="col-12  col-lg-4"><input type="text " placeholder="Name" class="nametxtbox3" value="johndoe" disabled></div>
-                        </div>
+                    <h5 class="maintextanalis">Three Column</h5>
+                    <div class="form-group col-12 col-lg-4">
+                        <input type="text" id="name" class="form-control " required>
+                        <label class="form-control-placeholder" for="name">Focus</label>
                     </div>
-                    <div class="analysisform">
-                        <h5 class="maintextanalis">Four Column</h5>
-                        <div class="txtboxfroneclm row">
-                            <div class="col-12  col-lg-3"><input id="validdata" type="text" class="nametxtbox4"></div>
-                            <div class="col-12  col-lg-3"><input type="text " placeholder="Name" class="nametxtbox4" disabled></div>
-                            <div class="col-12  col-lg-3"><input type="text " placeholder="Name" class="nametxtbox4" value="johndoe"></div>
-                            <div class="col-12  col-lg-3"><select class="nametxtbox4" name="Drop Down" disabled>
-                                <option value="">Drop Down</option>
-                                <option value="">Drop Down2</option>
+                    <div class="form-group col-12 col-lg-4">
+                        <input type="password" id="name" class="form-control" value="1234546789" required>
+                        <label class="form-control-placeholder" for="name">Password</label>
+                    </div>
+                    <div class="form-group col-12  col-lg-4">
+                        <input type="text" id="name" class="form-control disabled " value="johndoe">
+                        <label class="form-control-placeholder" for="name" aria-disabled="">Disebled</label>
+                    </div>
+                    <h5 class="maintextanalis">Four Column</h5>
+                    <div class="form-group col-12 col-lg-3">
+                        <input type="text" id="name" class="form-control " required>
+                        <label class="form-control-placeholder" for="name">Designation</label>
+                    </div>
+                    <div class="form-group col-12 col-lg-3">
+                        <input type="text" id="name" class="form-control " required>
+                        <label class="form-control-placeholder" for="name">Name</label>
+                    </div>
+                    <div class="form-group col-12  col-lg-3">
+                        <input type="text" id="name" class="form-control " value="johndoe" required>
+                        <label class="form-control-placeholder" for="name">Username</label>
+                    </div>
+                    <div class="form-group col-12 col-lg-3">
+                        <select class="form-select " name="Select">
+                            <option value="">Select</option>
+                            <option value="">Drop Down2</option>
                             <option value="">Drop Down3</option>
                             <option value="">Drop Down4</option>
-                            </select></div>
+                        </select>
+                    </div>
                             <div class="minifont">
                                 <p class="minifont-danger">Enter Valid data</p>
                                 <p class="minifont-secondary">Enter your full Name as per ID</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="analysisform">
                         <h4 class="maintextanalis">Other Design Elements</h4>
                         <h5 class="maintextanalis">File Upload</h5>
                         <div class="txtboxfroneclm">
@@ -172,8 +193,6 @@
                                     alt=""> Upload</button>
                             &nbsp; No items selected
                         </div>
-                    </div>
-                    <div class="analysisform">
                         <h5 class="maintextanalis">Radio Button</h5>
                         <div class="txtboxfroneclm">
                             <input class="form-check-input" type="radio" name="Green" id="Green">
@@ -181,8 +200,6 @@
                             <input class="form-check-input" type="radio" name="Green" id="Green">
                             Option 2
                         </div>
-                    </div>
-                    <div class="analysisform">
                         <h5 class="maintextanalis">Checkbox</h5>
                         <div class="txtboxfroneclm">
                             <input class="form-check-input" type="checkbox" name="flexRadioDefault"
