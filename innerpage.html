@@ -14,10 +14,15 @@
 <body>
     <div class="backgrow">
         <div class="headerdashboard d-flex align-items-center">
-            <div class="menubar">
-                <a href="#" id="menubaraction">
-                <img src="images/menu-bar.svg">
-            </a>
+            <div class="menubar d-lg-none d-block">
+                <a id="menubaraction1" href="#">
+                    <img src="images/menu-bar.svg">
+                </a>
+            </div>
+            <div class="menubar d-lg-block d-none">
+                <a id="menubaraction" href="#">
+                    <img src="images/menu-bar.svg">
+                </a>
             </div>
             <div class="logo d-lg-block d-sm-none">
                 <a href="#">
@@ -48,27 +53,37 @@
                     <img src="images/profile.png" alt="" height="44px" width="44px">
                 </a>    
             </div>
-            <div class="name d-lg-block d-sm-none align-content-center">
-                <a href="#">
-                John Doe
-            </a>
-            </div>
-            <div class="arrow">
-                <a href="#">
-                <img src="images/downward-arrow.svg" alt="" height="16px" width="16px">
-            </a>
+            <div>
+                <select class="button">
+                    <option value="">
+            
+                        <div class="name d-lg-block d-sm-none align-content-center">
+                            <a href="#">
+                                John Doe
+                            </a>
+                        </div>
+                        <div class="arrow">
+                            <a href="#">
+                                <img src="images/downward-arrow.svg" alt="" height="16px" width="16px">
+                            </a>
+                        </div>
+                    </option>
+                    <option>Charlie</option>
+                    <option>Peter Parker</option>
+                    <option>Smith Hedalson</option>
+                </select>
             </div>
         </div>
         <div class="afterheader">
-                <aside class="lm d-md-block d-none">
+                <aside class="lm d-lg-block d-none">
                     <ul class="list-unstyled">
-                        <a href="http://127.0.0.1:5500/dashboard.html#">
+                        <a href="http://127.0.0.1:5500/HTML%20Training%20Assignment/dashboard.html">
                             <li class="">
                                 <img src="./images/dashboard-default.svg" alt="Dashboard Icon">
                                 <span class="hide">Dashboard</span>
                             </li>
                         </a>
-                        <a href="http://127.0.0.1:5500/innerpage.html?#">
+                        <a href="#">
                             <li class="">
                                 <img src="./images/graph-active.svg" alt="Dashboard Icon">
                                 <span class="activemenu hide">Analysis</span>
@@ -108,7 +123,52 @@
                 </aside>
 
             <section class="main">
-                
+                <aside class="lm1 d-block d-lg-none">
+                    <ul class="list-unstyled">
+                        <a href="http://127.0.0.1:5500/HTML%20Training%20Assignment/dashboard.html">
+                            <li class="">
+                                <img src="./images/dashboard-active.svg" alt="Dashboard Icon">
+                                <span class="activemenu">Dashboard</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/graph-default.svg" alt="Dashboard Icon">
+                                <span>Analysis</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/inbox-default.svg" alt="Dashboard Icon">
+                                <span>Inbox</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/clock-default.svg" alt="Dashboard Icon">
+                                <span>History</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/user-default.svg" alt="Dashboard Icon">
+                                <span>Users</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/maintenance-default.svg" alt="Dashboard Icon">
+                                <span>Maintenance</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="">
+                                <img src="./images/setting-default.svg" alt="Dashboard Icon">
+                                <span>Setting</span>
+                            </li>
+                        </a>
+                    </ul>
+                </aside>
                 <div class="analysisform row">
                     <h1 class="maintext">Analysis</h1>
                     <h5 class="maintextanalis">One Column</h5>
@@ -149,9 +209,9 @@
                         </select>
                     </div>
                     <h5 class="maintextanalis">Three Column</h5>
-                    <div class="form-group col-12 col-lg-4">
-                        <input type="text" id="name" class="form-control " required>
-                        <label class="form-control-placeholder" for="name">Focus</label>
+                    <div class="form-group col-12  col-lg-4">
+                        <input type="text" id="name" class="form-control focus" required autofocus>
+                        <label class="form-control-placeholder text-danger" for="name">Focus</label>
                     </div>
                     <div class="form-group col-12 col-lg-4">
                         <input type="password" id="name" class="form-control" value="1234546789" required>
@@ -159,7 +219,7 @@
                     </div>
                     <div class="form-group col-12  col-lg-4">
                         <input type="text" id="name" class="form-control disabled " value="johndoe">
-                        <label class="form-control-placeholder" for="name" aria-disabled="">Disebled</label>
+                        <label class="form-control-placeholder " for="name" aria-disabled="">Disebled</label>
                     </div>
                     <h5 class="maintextanalis">Four Column</h5>
                     <div class="form-group col-12 col-lg-3">
@@ -189,9 +249,12 @@
                         <h4 class="maintextanalis">Other Design Elements</h4>
                         <h5 class="maintextanalis">File Upload</h5>
                         <div class="txtboxfroneclm">
+                            <div class="fileopener">
                             <button type="button" class="btn btn-outline-danger"><img src="images/cloud-upload-icon.svg"
                                     alt=""> Upload</button>
-                            &nbsp; No items selected
+                            <span>No items selected</span> 
+                        </div>
+                            <input type="file" class="hiddenfileopener">
                         </div>
                         <h5 class="maintextanalis">Radio Button</h5>
                         <div class="txtboxfroneclm">
@@ -246,13 +309,13 @@
                         <div class="tab">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a role="button" class="nav-link "><span class="report active-report" id="tab1">Tab1</span></a>
+                                    <a role="button" class="nav-link"><span class="report active-report" id="tab1">Tab1</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a role="button" class="nav-link" href="#"><span class="report" id="tab2">Tab2</span></a>
+                                    <a role="button" class="nav-link"><span class="report" id="tab2">Tab2</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a role="button" class="nav-link" href="#"><span class="report" id="tab3">Tab3</span></a>
+                                    <a role="button" class="nav-link"><span class="report" id="tab3">Tab3</span></a>
                                 </li>
                             </ul>
                         </div>
